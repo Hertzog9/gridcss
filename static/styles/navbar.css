@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    background-color: rgb(102, 96, 96);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover {
+    background-color: rgb(150, 140, 140);
+}
+
+.nav-btn {
+    display: none;
+}
+
+img {
+    width: 4em;
+
+}
+
+@media (max-width: 800px) {
+
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 6px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: rgb(102, 96, 96);
+        color: white;
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(102, 96, 96);
+
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+
+
+
+}
