@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="static/styles/navbar.css">
-    <link rel="stylesheet" href="static/styles/stylemaincon.css">
+    <link rel="stylesheet" href="static/styles/style-main-container.css">
     <link rel="stylesheet" href="static/styles/stylecard-con.css">
 
 </head>
@@ -45,19 +45,28 @@
                 rerum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque repudiandae modi fuga quis. Id,
                 exercitationem itaque quasi quia ut aut veritatis consectetur delectus minus.</p>
+                
         </div>
 
         <div class="container">
             <div class="card">
                 <a href="#"><img src="static/images/Снимок 2023-02-25 23.14.17.png" alt=""></a>
                 <div class="info">
-                    <a href="#">
-                        <p>Услуга</p>
-                    </a>
-                    <a href="#">
-                        <p>15$</p>
-                    </a>
-                    <button>Позвонить</button>
+                    <div class="details-wrapper">
+                        <!-- Счетчик -->
+                        <div class="items counter-wrapper">
+                            <div class="items__control" data-action="minus">-</div>
+                            <div class="items__current" data-counter>1</div>
+                            <div class="items__control" data-action="plus">+</div>
+                        </div>
+                          <!--  // Счетчик -->                     
+                            
+                            <div class="price__currency">300 ₽</div>                        
+                        
+                        <button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+                                 
+                       
+                    </div>
                 </div>
 
 
@@ -182,6 +191,7 @@
 
 
             </div>
+            
 
 
         </div>
@@ -192,12 +202,21 @@
                 rerum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque repudiandae modi fuga quis. Id,
                 exercitationem itaque quasi quia ut aut veritatis consectetur delectus minus.</p>
+                <div>
+                    <div class="items items--small counter-wrapper">
+                        <div class="items__control" data-action="minus">-</div>
+                        <div class="items__current" data-counter="">1</div>
+                        <div class="items__control" data-action="plus">+</div>
+                    </div>
+                    
+                </div>
         </div>
 
     </div>
 
 
 
+    <script src="/js/counter.js"></script>
 
 </body>
 

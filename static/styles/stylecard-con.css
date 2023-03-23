@@ -17,8 +17,57 @@
     width: 100%;
 }
 
+.details .wrapper {
+    display: inline;
+    justify-content: center;
+}
+
+
+.items {
+	font-family: 'Merriweather', serif;
+	background: #bfafe4;
+	border-radius: 8px;
+	width: 120px;
+	display: flex;
+	font-size: 20px;
+	height: 30px;
+	overflow:hidden;
+}
+
+.items__control {
+	width: 40px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+    background: #eb5a1e;
+    color: #FFF;
+}
+
+.items__current {
+	width: 50px;
+}
+
+/* items--small */
+.items.items--small {
+	width: 90px;
+	font-size: 16px;
+	height: 26px;
+	text-align: center;
+    font-size: 18px;
+	font-weight: 500;
+}
+
+
+.items.items--small .items__control {
+	width: 30px;
+}
+
 .card>.info {
     text-align:center;
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
 }
 
 @media (max-width: 1000px) {
